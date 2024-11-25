@@ -16,17 +16,17 @@
                 x:Name="editor_id"
                 Placeholder="Ingrese el ID"
                 AutoSize="TextChanges"
-                HeightRequest="150"/>
+                HeightRequest="75"/>
             <Editor
                 x:Name="editor_nombre"
                 Placeholder="Ingrese su Nombre"
                 AutoSize="TextChanges"
-                HeightRequest="150"/>
+                HeightRequest="75"/>
             <Editor
                 x:Name="editor_carrera"
                 Placeholder="Ingrese su Carrera"
                 AutoSize="TextChanges"
-                HeightRequest="150"/>
+                HeightRequest="75"/>
             
 
             <Label
