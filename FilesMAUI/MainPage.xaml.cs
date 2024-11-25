@@ -1,25 +1,57 @@
-﻿namespace FilesMAUI
+﻿using FilesMAUI.Interfaces;
+using FilesMAUI.Modelos;
+using FilesMAUI.Repositorio;
+
+namespace FilesMAUI
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
-
+        IEstudianteUdlaRepository _estudianteUdlaRepository;
+        EstudianteUdla estudiante = new EstudianteUdla();
         public MainPage()
         {
+            _estudianteUdlaRepository = new EstudianteUdlaPorArchivosRepository();
             InitializeComponent();
+
+
+
+            estudiante = _estudianteUdlaRepository.DevuelveEstudianteUdla(1);
+
+
+
+            BindingContext = estudiante;
+
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+
+/* Cambio no fusionado mediante combinación del proyecto 'FilesMAUI (net8.0-maccatalyst)'
+Antes:
+        private void GuardaEstudiante_Clicked(object sender, EventArgs e)
         {
-            count++;
+Después:
+        private void GuardaEstudiante_ClickedAsync(object sender, EventArgs e)
+        {
+*/
+        private async void GuardaEstudiante_Clicked(object sender, EventArgs e)
+        {
+            EstudianteUdla estudiante = new EstudianteUdla
+            {
+                Id = 1,
+                Nombre = "Emilio",
+                Carrera = "Ingenieria Software"
+            };
+            bool guardar_estudiante = _estudianteUdlaRepository.CrearEstudianteUdla(estudiante);
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
+            if (guardar_estudiante)
+            {
+                await DisplayAlert("Alerta", "Todo Posi Ñaño", "OK");
+            }
             else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            {
+                await DisplayAlert("Alerta", "Negado Ñaño", "OK");
+            }
         }
+
     }
 
 }
