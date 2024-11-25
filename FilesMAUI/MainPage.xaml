@@ -12,6 +12,22 @@
                 HeightRequest="185"
                 Aspect="AspectFit"
                 SemanticProperties.Description="dot net bot in a race car number eight" />
+            <Editor
+                x:Name="editor_id"
+                Placeholder="Ingrese el ID"
+                AutoSize="TextChanges"
+                HeightRequest="150"/>
+            <Editor
+                x:Name="editor_nombre"
+                Placeholder="Ingrese su Nombre"
+                AutoSize="TextChanges"
+                HeightRequest="150"/>
+            <Editor
+                x:Name="editor_carrera"
+                Placeholder="Ingrese su Carrera"
+                AutoSize="TextChanges"
+                HeightRequest="150"/>
+            
 
             <Label
                 x:Name="Label_id"

@@ -37,19 +37,21 @@ Después:
             EstudianteUdla estudiante = new EstudianteUdla
             {
                 Id = 1,
-                Nombre = "Emilio",
-                Carrera = "Ingenieria Software"
+                Nombre = editor_nombre.Text,
+                Carrera = editor_carrera.Text,
             };
             bool guardar_estudiante = _estudianteUdlaRepository.CrearEstudianteUdla(estudiante);
 
             if (guardar_estudiante)
             {
                 await DisplayAlert("Alerta", "Todo Posi Ñaño", "OK");
+                Navigation.PushAsync(new MainPage());
             }
             else
             {
                 await DisplayAlert("Alerta", "Negado Ñaño", "OK");
             }
+            
         }
 
     }
