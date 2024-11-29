@@ -1,19 +1,62 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+
 <Shell
     x:Class="FilesMAUI.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:FilesMAUI"
     Shell.FlyoutBehavior="Flyout"
+    
     Title="FilesMAUI">
+
+    <Shell.FlyoutHeader>
+        <Grid BackgroundColor="Black"
+              Padding="10">
+            <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                <Image Source="https://i.pinimg.com/236x/05/49/86/05498664d54894f92c6523c50c1eb9e6.jpg" 
+                       WidthRequest="75"
+                       HorizontalOptions="Center" />
+                <Label Text="Emilio Guerrero" 
+                       HorizontalTextAlignment="Center"
+                       TextColor="White"
+                       FontSize="16" />
+            </VerticalStackLayout>
+        </Grid>
+    </Shell.FlyoutHeader>
+
+    <Shell.FlyoutFooter>
+        <Grid BackgroundColor="Black"
+            Padding="10">
+            <VerticalStackLayout>
+                <Image Source="https://i.pinimg.com/236x/b3/e4/95/b3e495502d1efab95079479edf93925d.jpg" WidthRequest="75">
+                </Image>
+            </VerticalStackLayout>
+        </Grid>
+    </Shell.FlyoutFooter>
+
+    <TabBar>
+        <Tab>
+           <ShellContent
+                Title="Home"
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Route="MainPage"
+                Icon="https://img.icons8.com/ios7/600/home.png"/>
+           <ShellContent
+                Title="About"
+                ContentTemplate="{DataTemplate local:About}"
+                Route="About" 
+                Icon="https://cdn-icons-png.flaticon.com/512/456/456212.png"/>
+        </Tab>
+    </TabBar>
 
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Route="MainPage"
+        Icon="https://img.icons8.com/ios7/600/home.png"/>
     <ShellContent
         Title="About"
         ContentTemplate="{DataTemplate local:About}"
-        Route="About" />
+        Route="About" 
+        Icon="https://cdn-icons-png.flaticon.com/512/456/456212.png"/>
 
 </Shell>

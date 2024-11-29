@@ -35,8 +35,8 @@
             <Image Source="https://cdn.beahero.gg/2020/07/Rocket-League.jpg"
                    Grid.Row="0"
                    Grid.Column="0"
-                   WidthRequest="200"
-                   HeightRequest="100"
+                   WidthRequest="175"
+                   HeightRequest="75"
                    Aspect="AspectFill"
                    HorizontalOptions="FillAndExpand"
                    VerticalOptions="FillAndExpand"/>
@@ -45,8 +45,8 @@
             <Image Source="https://www.ole.com.ar/images/2022/09/07/nUiOHBqAA_660x880__1.jpg"
                    Grid.Row="0"
                    Grid.Column="1"
-                   WidthRequest="200"
-                   HeightRequest="200"
+                   WidthRequest="100"
+                   HeightRequest="100"
                    Aspect="AspectFill"
                    HorizontalOptions="FillAndExpand"
                    VerticalOptions="FillAndExpand"/>
@@ -54,8 +54,8 @@
             <Image Source="https://manodemago.com/wp-content/uploads/2022/05/loris-marie-GWlnV2WV4ro-unsplash-1-1.jpg"
                    Grid.Row="0"
                    Grid.Column="2"
-                   WidthRequest="200"
-                   HeightRequest="200"
+                   WidthRequest="100"
+                   HeightRequest="100"
                    Aspect="AspectFill"
                    HorizontalOptions="FillAndExpand"
                    VerticalOptions="FillAndExpand"/>
