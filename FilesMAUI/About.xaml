@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FilesMAUI.About"
+             Title="About">
+    <VerticalStackLayout>
+        <Image
+            Source="https://images7.memedroid.com/images/UPLOADED887/662bb471f120e.jpeg"
+            HeightRequest="185"
+            Aspect="AspectFit"/>
+        <Label 
+            Text="EMILIO GUERRERO"
+            FontSize="25"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+        <Label Text="Tengo 19 años, estudio la carrera de Ingeniería en Software en la Universidad de las Américas"
+               FontSize="16"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               Margin="0,20,0,0"/>
+        <Image Source="https://sitios.udla.edu.ec/facea/wp-content/uploads/2024/08/Mesa-de-trabajo-5.png"
+                    WidthRequest="100"
+                    HeightRequest="100"
+                    VerticalOptions="Center"/>
+        <Label Text="Algunos hobbies que tengo: Jugar Videojuegos, hacer carto-magia, jugar volleyball"
+               FontSize="16"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"/>
+        
+        <Grid RowDefinitions="Auto"
+              ColumnDefinitions="*, *, *" 
+              VerticalOptions="CenterAndExpand"
+              Margin="0,20,0,0">
+
+            <Image Source="https://cdn.beahero.gg/2020/07/Rocket-League.jpg"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   WidthRequest="200"
+                   HeightRequest="100"
+                   Aspect="AspectFill"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="FillAndExpand"/>
+
+
+            <Image Source="https://www.ole.com.ar/images/2022/09/07/nUiOHBqAA_660x880__1.jpg"
+                   Grid.Row="0"
+                   Grid.Column="1"
+                   WidthRequest="200"
+                   HeightRequest="200"
+                   Aspect="AspectFill"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="FillAndExpand"/>
+
+            <Image Source="https://manodemago.com/wp-content/uploads/2022/05/loris-marie-GWlnV2WV4ro-unsplash-1-1.jpg"
+                   Grid.Row="0"
+                   Grid.Column="2"
+                   WidthRequest="200"
+                   HeightRequest="200"
+                   Aspect="AspectFill"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="FillAndExpand"/>
+        </Grid>
+
+
+
+
+
+    </VerticalStackLayout>
+</ContentPage>
