@@ -10,12 +10,12 @@ namespace FilesMAUI
         EstudianteUdla estudiante = new EstudianteUdla();
         public MainPage()
         {
-            _estudianteUdlaRepository = new EstudianteUdlaPorArchivosRepository();
+            _estudianteUdlaRepository = new EstudianteUDLASQLiteRepository();
             InitializeComponent();
 
 
 
-            estudiante = _estudianteUdlaRepository.DevuelveEstudianteUdla(1);
+            //estudiante = _estudianteUdlaRepository.DevuelveEstudianteUdla(1);
 
 
 
